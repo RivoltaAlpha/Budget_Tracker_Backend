@@ -1,0 +1,6 @@
+@TyBudget_backend_HostAddress = http://localhost:5196
+
+GET {{TyBudget_backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
