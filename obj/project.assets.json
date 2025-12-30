@@ -3623,19 +3623,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tifany Nyawira\\.nuget\\packages\\": {}
+    "C:\\Users\\Tiff\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Tifany Nyawira\\Documents\\projects\\TyBudget_backend\\TyBudget_backend.csproj",
+      "projectUniqueName": "D:\\projects\\Budget_Tracker_Backend\\TyBudget_backend.csproj",
       "projectName": "TyBudget_backend",
-      "projectPath": "C:\\Users\\Tifany Nyawira\\Documents\\projects\\TyBudget_backend\\TyBudget_backend.csproj",
-      "packagesPath": "C:\\Users\\Tifany Nyawira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Tifany Nyawira\\Documents\\projects\\TyBudget_backend\\obj\\",
+      "projectPath": "D:\\projects\\Budget_Tracker_Backend\\TyBudget_backend.csproj",
+      "packagesPath": "C:\\Users\\Tiff\\.nuget\\packages\\",
+      "outputPath": "D:\\projects\\Budget_Tracker_Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Tifany Nyawira\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Tiff\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"

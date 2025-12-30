@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TyBudget_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d740c171c39fd5de5a3209509cef1dafd02f88f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("TyBudget_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TyBudget_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
