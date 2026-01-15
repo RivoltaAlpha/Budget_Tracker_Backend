@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace BudgetTracker.BackgroundJobs
+namespace TyBudget_backend.BackgroundJobs
 {
     public interface ISubscriptionProcessor
     {

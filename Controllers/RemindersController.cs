@@ -1,10 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using BudgetTracker.Services;
-using BudgetTracker.Models;
-using System;
-using System.Threading.Tasks;
+using TyBudget_backend.Services;
+using TyBudget_backend.Models.Entities;
 
-namespace BudgetTracker.Controllers
+namespace TyBudget_backend.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]

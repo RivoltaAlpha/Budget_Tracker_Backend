@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace BudgetTracker.Models
+namespace TyBudget_backend.Models.Entities
 {
     public class RecurringTransaction
     {

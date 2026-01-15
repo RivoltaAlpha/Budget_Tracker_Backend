@@ -1,15 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using BudgetTracker.Models;
+using TyBudget_backend.Models.Entities;
 
-namespace BudgetTracker.Data
+namespace TyBudget_backend.Data
 {
-    public class BudgetTrackerDbContext : DbContext
+    public class TyBudget_backendDbContext(DbContextOptions<TyBudget_backendDbContext> options) : DbContext(options)
     {
-        public BudgetTrackerDbContext(DbContextOptions<BudgetTrackerDbContext> options)
-            : base(options)
-        {
-        }
-
         // DbSets
         public DbSet<User> Users { get; set; }
         public DbSet<Account> Accounts { get; set; }
@@ -238,10 +233,10 @@ namespace BudgetTracker.Data
 }
 
 // Generic Repository Interface
-namespace BudgetTracker.Repositories
+namespace TyBudget_backend.Repositories
 {
     using System.Linq.Expressions;
-    using BudgetTracker.Data;
+    using TyBudget_backend.Data;
 
     public interface IRepository<T> where T : class
     {
@@ -257,10 +252,10 @@ namespace BudgetTracker.Repositories
     // Generic Repository Implementation
     public class Repository<T> : IRepository<T> where T : class
     {
-        protected readonly BudgetTrackerDbContext _context;
+        protected readonly TyBudget_backendDbContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public Repository(BudgetTrackerDbContext context)
+        public Repository(TyBudget_backendDbContext context)
         {
             _context = context;
             _dbSet = context.Set<T>();

@@ -1,24 +1,24 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using BudgetTracker.Services;
+using TyBudget_backend.Services;
 using System;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace BudgetTracker.BackgroundJobs
+namespace TyBudget_backend.BackgroundJobs
 {
-    public class BudgetTrackerBackgroundService : BackgroundService
+    public class TyBudget_backendBackgroundService : BackgroundService
     {
         private readonly IServiceProvider _serviceProvider;
-        private readonly ILogger<BudgetTrackerBackgroundService> _logger;
+        private readonly ILogger<TyBudget_backendBackgroundService> _logger;
         private Timer _recurringTransactionTimer;
         private Timer _subscriptionTimer;
         private Timer _reminderTimer;
 
-        public BudgetTrackerBackgroundService(
+        public TyBudget_backendBackgroundService(
             IServiceProvider serviceProvider,
-            ILogger<BudgetTrackerBackgroundService> logger)
+            ILogger<TyBudget_backendBackgroundService> logger)
         {
             _serviceProvider = serviceProvider;
             _logger = logger;

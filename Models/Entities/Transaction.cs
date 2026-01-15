@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BudgetTracker.Models
+namespace TyBudget_backend.Models.Entities
 {
     public class Transaction
     {
@@ -26,11 +26,11 @@ namespace BudgetTracker.Models
         public Guid? ToAccountId { get; set; }
 
         // Navigation Properties
-        public User User { get; set; }
-        public Account Account { get; set; }
-        public Account ToAccount { get; set; }
-        public RecurringTransaction RecurringTransaction { get; set; }
-        public Subscription Subscription { get; set; }
+        public User User { get; set; } //  one user has many transactions
+        public Account Account { get; set; } // one account has many transactions
+        public Account ToAccount { get; set; } // one account has many incoming transfers
+        public RecurringTransaction RecurringTransaction { get; set; } // one recurring transaction has many transactions
+        public Subscription Subscription { get; set; } // one subscription has many transactions
     }
 
     public enum TransactionType

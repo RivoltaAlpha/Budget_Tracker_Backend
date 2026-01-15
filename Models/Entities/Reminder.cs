@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace BudgetTracker.Models
+namespace TyBudget_backend.Models.Entities
 {
     public class Reminder
     {

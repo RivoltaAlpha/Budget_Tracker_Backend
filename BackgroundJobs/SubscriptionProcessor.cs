@@ -1,13 +1,13 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using BudgetTracker.Data;
-using BudgetTracker.Models;
+using TyBudget_backend.Data;
+using TyBudget_backend.Models;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BudgetTracker.BackgroundJobs
+namespace TyBudget_backend.BackgroundJobs
 {
     public class SubscriptionProcessor : ISubscriptionProcessor
     {
@@ -25,7 +25,7 @@ namespace BudgetTracker.BackgroundJobs
         public async Task ProcessSubscriptionsAsync()
         {
             using var scope = _serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<BudgetTrackerDbContext>();
+            var context = scope.ServiceProvider.GetRequiredService<TyBudget_backendDbContext>();
 
             try
             {
